@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Microsoft YaHei;
+  transition: .5s;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  min-width: 1000px;
+  font-weight: 500;
+  position: relative;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 1000px;
+  padding: 0 20px;
+  margin: 150px auto 50px auto;
+}
+
+.header ul li {
+  font-family: YouYuan;
+  flex-shrink: 0;
+  margin-right: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 35px;
+  border-radius: 5px;
+  transition: all .5s;
+  display: flex;
+  align-items: center;
+}
+
+.empty {
+  flex-grow: 1;
+  pointer-events: none;
+}
+
+.header img {
+  width: 100%;
+}
+
+.header ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.hover:hover {
+  background-color: rgba(242, 134, 157);
+  color: #fff;
+  /* font-weight: 600; */
+}
+
+.login {
+  background-color: rgb(242, 134, 157);
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.main {
+  width: 80%;
+  min-width: 1000px;
+  margin: 20px auto;
+}
+
+.rank {
+  padding: 20px;
+}
+
+.rank-item {
+  display: flex;
+  height: 150px;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  transition: all .5s;
+}
+
+.rank-item:hover {
+  box-shadow: 2px 2px 5px 5px #eee;
+}
+
+.num {
+  width: 10%;
+  text-align: center;
+}
+
+.num h1 {
+  font-size: 3rem;
+  color: rgb(242, 134, 157);
+}
+
+.num p {
+  color: gray;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+}
+
+.content img {
+  width: 195px;
+  height: 110px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  line-height: 3;
+  font-weight: 600;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+}
+
+.data p {
+  color: rgb(153, 162, 170);
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 3;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.data p img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.page-login {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 10000;
+}
+
+#form {
+  position: relative;
+  width: 600px;
+  background-color: #fff;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 1px solid gray;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(242, 134, 157);
+  /* border: 1px solid white; */
+}
+
+.banner {
+  width: 100%;
+}
+
+.btns {
+  padding: 50px;
+}
+
+.btns span {
+  height: 20px;
+  background-color: lightgray;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  outline: none
+}
+
+.btns button {
+  height: 40px;
+  background-color: rgb(242, 134, 157);
+  color: white;
+  padding: 10px 60px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid rgb(242, 134, 157);
+  outline: none
+}
+
+.btns button:hover {
+  background-color: white;
+  color: rgb(242, 134, 157);
+}
+
+.input-container {
+  width: 80%;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-container img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.input-container input {
+  width: 80%;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  outline: none;
+  color: #666
+  background-color: #fff;
+}
+
+.info {
+  color: #666;
+  padding-bottom: 20px;
+}
+
+.not_login {
+    color: gray;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+#logout {
+    position: relative;
+}
+
+.logoutPage {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 5px;
+    border-radius: 5px;
+    color: #666;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid gray;
+    display: none;
+    font-size: 5px;
+}
+
+.logoutPage button {
+    text-outline: none;
+    color: white;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
